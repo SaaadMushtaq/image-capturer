@@ -1,0 +1,154 @@
+.mainApp, .landingPageMain{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mainApp{
+  background-color: black;
+}
+
+.appMainDisplay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvasDisplay{
+  position: absolute;
+  z-index: 9;
+
+}
+
+.mirrorCam
+{
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    
+}
+
+
+h1{
+  color: #3aa0f1;
+}
+
+.btnGroup{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.optionsBtn{
+  background-color: #3aa0f1;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size:medium;
+  color: white;
+  padding: 25px 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.optionsBtn:hover,.downloadBtn:hover{
+  background-color: #2376c8;
+}
+
+.cameraOptions{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.stopIcon{
+  width: 30px;
+  height: 30px;
+  color: crimson;
+  transition: .5s;
+}
+
+.stopIcon:hover,
+.mirrorIcon:hover,
+.toggleCameraIcon:hover{
+  width: 35px;
+  height: 35px;
+}
+
+.clickImage{
+  position: absolute;
+  bottom: 60px;
+  background-color: transparent;
+  border: 5px solid white;
+  border-radius: 10px;
+  z-index: 11;
+}
+
+.clickMirror{
+  position: absolute;
+  bottom: 60px;
+  right: 30px;
+  background-color: transparent;
+  border: 5px solid white;
+  border-radius: 10px;
+  z-index: 11;
+
+}
+
+.mirrorIcon{
+  color: #2376c8;
+  width: 30px;
+  height: 30px;
+  transition: .5s;
+}
+
+.toggleCamera{
+  position: absolute;
+  bottom: 60px;
+  left: 30px;
+  background-color: transparent;
+  border: 5px solid white;
+  border-radius: 10px;
+  z-index: 11;
+}
+
+.toggleCameraIcon{
+  color: #2376c8;
+  width: 30px;
+  height: 30px;
+  transition: .5s;
+}
+
+.imageTaken{
+  height: 100%;
+  width: 100%;
+}
+
+.mirroredImageTaken{
+  transform: rotateY(180deg);
+  -webkit-transform:rotateY(180deg);
+  -moz-transform:rotateY(180deg);
+
+}
+
+.downloadBtn{
+ position: absolute;
+ bottom: 50px;
+ background-color: #3aa0f1;
+ padding: 20px 30px;
+ border-radius: 10px;
+ color: white;
+ text-decoration: none;
+ transition: 0.5s;
+
+}
